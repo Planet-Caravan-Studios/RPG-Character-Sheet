@@ -1,0 +1,53 @@
+/**************************************************
+Sliders File
+
+Global settings for sliders, outside of components
+
+**************************************************/
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+.react-datepicker{
+	font-size: $font_size_detail;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block !important;
+    width: 100%;
+}
+
+.react-datepicker__month-container{
+	min-width: 200px;
+}
+
+.react-datepicker__navigation-icon--next {
+   // right: -5px;
+}
+
+.react-datepicker__navigation-icon--previous {
+    //left: -5px;
+}
+
+.react-datepicker__current-month{
+	font-size: $font_size_detail !important;
+	margin-bottom: 5px;
+
+	select{
+		padding: 5px;
+		font-size: $font_size_detail;
+	}
+}
+
+.react-datepicker__day-name{
+	font-size: $font_size_detail;
+	padding: 3px 5px;
+	width: 2.5em !important;
+}
+
+.react-datepicker__day{
+	font-size: $font_size_detail;
+	padding: 3px 5px;
+	width: 2.5em !important;
+}

@@ -1,0 +1,53 @@
+/**************************************************
+MIXINS File
+
+Description:	Store SCSS mixins here
+
+Call: @include backgroundStandard;
+
+**************************************************/
+@import "@styles/vars.scss";
+
+@mixin flex_center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin backgroundStandard {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@mixin solidShadowHover {
+	&:hover{
+		text-shadow: $text-shadow-red;
+	}
+}
+
+@mixin maxWidth($maxWidth) {
+	width: 100%;
+	max-width: $maxWidth;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin paperTexture{
+	&:after{
+		content:'';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: .5;
+		pointer-events: none;
+		background-image: url('/img/textures/natural-paper.png');
+		background-repeat: repeat;
+		//mix-blend-mode: lighten;
+		//filter: contrast(1.5);
+		background-size: cover;
+	}
+}

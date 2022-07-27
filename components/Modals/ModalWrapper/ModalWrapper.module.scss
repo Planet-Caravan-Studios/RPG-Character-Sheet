@@ -1,0 +1,19 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	ModalWrapper
+Description:		
+
+
+**************************************************/
+.overlay{
+	z-index: 99;
+}
+.modal{
+	z-index: 100;
+}

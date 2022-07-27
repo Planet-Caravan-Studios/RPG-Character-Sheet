@@ -1,0 +1,65 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	DefaultSlider
+Description:		
+
+
+**************************************************/
+.Slider{
+	padding: 75px 75px;
+}
+
+.SlideOutter{
+	width: 100%;
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+}
+
+.SlideInner{
+	width: 100%;
+	max-width: 850px;
+	background: $white;
+	padding: 35px;
+	box-shadow: $nice_shadow_short;
+
+	display: flex;
+	flex-direction: row;
+
+	.image{
+		width: 300px;
+		padding: 15px;
+	}
+
+	.copy{
+		width:calc(100% - 300px);
+		padding: 35px 15px 15px;
+
+		.title{
+			font-family: $font_display;
+			font-size: $font_size_subhead;
+			margin-bottom: 10px;
+
+			/*&:after{
+				content:" ";
+				display: block;
+				width: 100%;
+				//max-width: 100px;
+				border-bottom:solid 2px $black;
+			}*/
+		}
+
+		.body{
+			font-family: $font_body;
+			font-size: $font_size_body;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	ColorCell
+Description:		
+
+
+**************************************************/
+
+
+.cellWrapper{
+	padding: 10px;
+}
+
+.cell{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	border: solid 1px $black;
+
+	.cellInfo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 5px 10px;
+
+		p{
+			margin-bottom: 5px;
+		}
+
+	}
+}

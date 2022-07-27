@@ -1,0 +1,49 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Headline
+Description:		
+
+
+**************************************************/
+
+.Headline{
+	display: inline-block;
+	font-family: $font_display;
+	font-size: $font_size_heading;
+	background: $white;
+	color: $black;
+	padding: 5px 60px;
+	position: relative;
+	z-index: 1;
+
+	//@include solidShadowHover;
+
+	$outerRotate: 3deg;
+	$innerRotate: -1deg;
+
+	transform: rotate($outerRotate);
+
+	.inner{
+		display: inline-block;
+		transform: rotate($innerRotate);
+	}
+
+	&:after{
+		content:'';
+		width: 100%;
+		height: 100%;
+		background: url('/img/textures/cardboard.png');
+		mix-blend-mode: multiply;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+}

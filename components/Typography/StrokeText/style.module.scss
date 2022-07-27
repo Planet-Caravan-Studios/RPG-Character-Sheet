@@ -1,0 +1,50 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	StrokeText
+Description:		Regular ordinary text component
+
+
+**************************************************/
+
+.StrokeText{
+	//@include maxWidth(800px);
+	font-family: inherit;
+	color: transparent;
+
+	-webkit-text-stroke-width: 3px;
+  	-webkit-text-stroke-color: $black;
+  	letter-spacing: 0.025em;
+
+	/*text-shadow:
+		2px 0px 0px $white,
+		-2px 0px 0px $white,
+		0px 2px 0px $white,
+		0px -2px 0px $white,
+
+		1px 1px 0px $white,
+		-1px 1px 0px $white,
+		1px -1px 0px $white,
+		-1px -1px 0px $white,
+
+		6px 0px 1px $black,
+		-6px 0px 1px $black,
+		0px 6px 1px $black,
+		0px -6px 1px $black,
+
+		5px 5px 1px $black,
+		-5px 5px 1px $black,
+		5px -5px 1px $black,
+		-5px -5px 1px $black,
+
+		4px 4px 1px $black,
+		-4px 4px 1px $black,
+		4px -4px 1px $black,
+		-4px -4px 1px $black,*/
+}
+

@@ -1,0 +1,27 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+ 
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	
+Description:		
+
+
+**************************************************/  
+
+.Texture{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .65;
+	pointer-events: none;
+	background-image: url('/img/textures/cardboard.png');
+	background-repeat: repeat;
+	mix-blend-mode: lighten;
+	background-size: 100%;
+}

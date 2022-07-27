@@ -1,0 +1,93 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	VideoModal
+Description:		
+
+
+**************************************************/
+.VideoModal{
+	$size: 850px;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,calc(-50% + 100px),0);
+	background: $black;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: $nice_shadow;
+	transition: $transition_medium;
+	transition-delay: 0s;
+	will-change: opacity;
+
+	opacity: 0;
+	pointer-events: none;
+
+	width: 100%;
+	max-width: $size;
+
+	&.active{
+		transform: translate3d(-50%,-50%,0);
+		opacity: 1;
+		pointer-events: auto;
+
+	}
+
+	.modalCloseSection{
+		position: relative;
+		width: 100%;
+
+		.modalClose{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 100%;
+			border: 0px;
+			background: $black;
+			right: -45px;
+			top: -45px;
+			cursor: pointer;
+			opacity: 0.5;
+			transition: $transition_medium;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			span{
+				font-size: 50px;
+				color: $white;
+			}
+
+			&:hover{
+				background: $red;
+				opacity: 1;
+			}
+
+			img{
+				width: 65%;
+			}
+		}
+	}
+
+	.videoFrame{
+		width: 100%;
+		height: calc(#{$size} * (9/16));
+		display: block;
+
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+}

@@ -1,0 +1,44 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Button1
+Description:		
+
+
+**************************************************/
+
+.Button1{
+	position: relative;
+	display: inline-block;
+	background-color: transparent;
+	padding: 0.45em 2ch;
+	text-align: center;
+	//font-family: $font_body;
+	font-size: $font_size_body;
+	color: $black;
+	border: solid 1px $black;
+	//border-radius: 50px;
+	transition: $transition_fast;	
+
+	span{
+		display: inline-block;
+		padding-top: 3px;
+		border: solid 1px transparent;
+		color: inherit;
+		transition: $transition_fast;	
+	}
+
+	&:hover{
+
+		span{
+			border-bottom: solid 1px $black;
+		}
+	}
+
+	
+}

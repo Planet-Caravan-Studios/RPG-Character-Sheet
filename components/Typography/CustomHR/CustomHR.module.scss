@@ -1,0 +1,20 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Typography
+Description:		Barbed wire graphic
+
+
+**************************************************/
+
+.CustomHR{
+	width: calc(100% - 30px);
+	max-width: 300px;
+	margin: 35px auto;
+	border-bottom: solid 1px $black
+}

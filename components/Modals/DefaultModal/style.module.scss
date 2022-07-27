@@ -1,0 +1,99 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	DefaultModal
+Description:		
+
+
+**************************************************/
+.DefaultModal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,calc(-50% + 100px),0);
+	width: 100%;
+	max-width: 850px;
+	background: $black;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 0px 35px;
+	box-shadow: $nice_shadow;
+	transition: $transition_medium;
+	transition-delay: $transition_medium;
+	will-change: opacity;
+
+
+	opacity: 0;
+	pointer-events: none;
+
+
+	&.active{
+		transform: translate3d(-50%,-50%,0);
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.modalCloseSection{
+		position: relative;
+		width: 100%;
+
+		.modalClose{
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 100%;
+			border: 0px;
+			background: $black;
+			right: -25px;
+			top: -25px;
+			cursor: pointer;
+			transition: $transition_medium;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			span{
+				font-size: 50px;
+				color: $white;
+			}
+
+			&:hover{
+				background: $red;
+			}
+
+			img{
+				width: 65%;
+			}
+		}
+	}
+
+	.copy{
+		padding: 15px 35px 15px;
+
+		.headline{
+			font-size: $font_size_heading;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 35px;
+			margin-top: 15px;
+		}
+
+		.main{
+			text-align: justify;
+			margin-bottom: 35px;
+		}
+	}
+
+	.cta{
+		padding: 15px 0;
+	}
+}

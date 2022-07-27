@@ -1,0 +1,65 @@
+/**************************************************
+Sliders File
+
+Global settings for sliders, outside of components
+
+**************************************************/
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+$font: $font_alt;
+$buttonSize: 100px;
+$color: $black;
+
+$paginationSize: 10px;
+
+
+//Previous Button
+	.swiper-button-prev {
+		top: 50%;
+		transform: translateY(50%);
+		&::after {
+			content:"<";
+			font-family: $font;
+			font-size: $buttonSize;
+			color: $color;
+			transition: $transition_fast;
+			padding: 10px;
+		}
+
+		&:hover{
+			&::after {
+				color:$hm_blue;
+			}
+		}
+	}
+//Next Button
+	.swiper-button-next {
+		top: 50%;
+		transform: translateY(50%);
+		&::after {
+			content:">";
+			font-family: $font;
+			font-size: $buttonSize;
+			color: $color;
+			transition: $transition_fast;
+			padding: 10px;
+		}
+
+		&:hover{
+			&::after {
+				color:$hm_blue;
+			}
+		}
+	}
+
+//Pagination
+	.swiper-pagination-bullet{
+		width: $paginationSize;
+		height: $paginationSize;
+		opacity: 1;
+		background-color: $grey_1;
+		&-active{
+			background-color: $hm_blue;
+		}
+	}

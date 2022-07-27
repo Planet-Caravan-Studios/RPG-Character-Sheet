@@ -1,0 +1,20 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+.TestSquare{
+	width: 25%;
+	padding: 15px;
+	display: inline-block;
+	@include flex_center;
+	
+	.inner{
+		width: 100%;
+		max-width: 200px;
+		height: 200px;
+		position: relative;
+		@include flex_center;
+		background-color: $black;
+		color: $white;
+	}
+	
+}

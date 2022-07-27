@@ -1,0 +1,36 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Typography
+Description:		Typography samples for Necro Cult Zine
+
+
+**************************************************/
+
+.CutOut{
+	//background-color: $white;
+	color: $black;
+	display: inline;
+	line-height: 1.45;
+	background: $white;
+	box-shadow: -1em 0 0 $white; 
+}
+
+/*.cut_out_alt{
+	background-color: $black;
+	color: $white;
+	font-family: $font_display;
+	display: inline-block;
+	transform: rotate(3deg);
+	font-size: 1.55em;
+	padding: 2px 2px;
+	margin: -6px 0 -3px;
+	line-height: 1;
+	position: relative;
+	top: 2px;
+}*/

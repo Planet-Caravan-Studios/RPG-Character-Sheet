@@ -1,0 +1,33 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	MultiPartSlider
+Description:		
+
+
+**************************************************/
+
+.wrapper{
+	width: 100%;
+
+
+}
+
+
+.ContentSlider{
+	margin-bottom: 100px;
+}
+
+.CopySlider{
+
+	.SlideInner{
+		width: 100%;
+		max-width: 650px;
+		margin: auto;
+	}
+}

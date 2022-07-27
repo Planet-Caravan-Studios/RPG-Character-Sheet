@@ -1,0 +1,69 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	Typography
+Description:		Typography samples for Necro Cult Zine
+
+
+**************************************************/
+
+/***** ========== *****/
+/***** TYPOGRAPHY *****/
+/***** ========== *****/
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	ul{
+		background-color: $white;
+		list-style: none;
+		padding: 35px;
+		margin: 15px 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		
+		li{
+			margin-bottom: 15px;
+			display: inline-block;
+
+			//Fonts
+			&.display{
+				font-size: $font_size_heading;
+				font-family: $font_display;
+			}
+			&.alt{
+				font-size: $font_size_subhead;
+				font-family: $font_alt;
+			}
+			&.bodyFont{
+				font-size: $font_size_body;
+				font-family: $font_body;
+			}
+
+			//Font Sizes
+			&.heading{
+				font-size: $font_size_heading;
+			}
+			&.subhead{
+				font-size: $font_size_subhead;
+			}
+			&.body{
+				font-size: $font_size_body;
+			}
+			&.detail{
+				font-size: $font_size_detail;
+			}
+		}
+	}
+
+}

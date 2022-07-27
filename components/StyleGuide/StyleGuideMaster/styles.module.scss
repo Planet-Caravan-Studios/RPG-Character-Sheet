@@ -1,0 +1,39 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+/**************************************************
+Holy Mountain Component
+
+
+Component Name: 	StyleGuideMaster
+Description:		
+
+
+**************************************************/
+
+.Wrapper{
+	width: 100%;
+}
+
+.StyleGuideSection{
+	padding: 35px 15px;
+	margin-bottom: 35px;
+
+	.SectionHeader{
+		text-align: left;
+		color: $black;
+		border-bottom: solid 1px $black;
+	}
+
+	.cellWrapper{
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	
+}
