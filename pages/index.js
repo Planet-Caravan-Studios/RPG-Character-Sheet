@@ -47,25 +47,33 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Holy Mountain Component</title>
+        <title>RPG Character Sheet</title>
       </Head>
 
       <main>
-        <Header title="Holy Mountain Component Demo" />
+        <Header title="RPG Character Sheet" />
         <Container>
-          <ComponentMeta
-            title={props.title}
-            author={props.author}
-            authorTeam={props.authorTeam}
-            description={props.description}
-            contentProps={props.contentProps}
-            libraries={props.libraries}
-          />
+          <div className="grid">
+            <div className="span-col-2 SketchGothic">Character Name</div>
+            <div className="span-col-3">Race, Class, Sub-Class, Alignment</div>
+            <div>Stats pt1</div>
+            <div>Stats pt2</div>
+            <div>Level, HP</div>
+            <div className="span-col-2">Clothing &amp; Armor</div>
+            <div className="span-col-3 span-row-3">Character Image</div>
+            <div>Wearable Item 1</div>
+            <div>Wearable Item 2</div>
+            <div>Bag Item 1</div>
+            <div>Bag Item 2</div>
+            <div>Bag Item 3</div>
+            <div>Bag Item 4</div>
+            <div>Weapon</div>
+            <div className="span-col-2">Attacks</div>
+            <div className="span-col-2">Abilities</div>
+          </div>
         </Container>
         
-        <Sandbox>
-          Components go here
-        </Sandbox>
+        
         
       </main>
 

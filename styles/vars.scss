@@ -9,10 +9,10 @@ Description:	Store SCSS vars here
 
 /***** Color Variables *****/
 	$black: 			#212121;
-	$white: 			#fafafa;
+	$white: 			#ebddbe;
 	$grey_1:		#ececec;
 	$grey_2:		#3e3e3e;
-	$red: 			#fb0000;
+	$red: 			#9C1700;
 
 	//Holy Mountain Colors
 		$hm_red:		#e30022;
@@ -32,12 +32,12 @@ Description:	Store SCSS vars here
 
 		$background_color:	$white;
 		$text_color:				$black;
-		$accent_color:			$grey_1;
+		$accent_color:			$red;
 
 
 /***** Fonts *****/
-	$font_body:		"IBM Plex Mono";
-	$font_display:	"Computerfont";
+	$font_body:		"aniron";
+	$font_display:	"SketchGothic";
 	$font_alt:			"Windows Command Prompt";
 
 /***** Font Sizes *****/

@@ -37,77 +37,31 @@ FONTS
 	}
 
 
-/***** IBM Plex Mono *****/
-
-	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap');
-
-//Local Font - having issues with the src urls
-
-	//regular - 400
+/***** Sketch Gothic *****/
+/* https://www.dafont.com/computerfont.font */
 	@font-face {
-		font-family: "IBM Plex Mono";
-		src: url("/fonts/IBMPlexMono-Regular.ttf") format("ttf");
-		font-weight: 400;
-		font-display: fallback;
+	    font-family: 'sketch_gothic_schoolregular';
+	    src: url('/sketchgothic.woff2') format('woff2'),
+	         url('/sketchgothic.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
 	}
-	.ibm-plex-mono{
-		font-family: "IBM Plex Mono";
+	.SketchGothic{
+		font-family: "sketch_gothic_schoolregular";
 		line-height:1;
+		//font-size: 45px;
 	}
 
-	//light - 300
-		@font-face {
-			font-family: "IBM Plex Mono";
-			src: url("/fonts/IBMPlexMono-Light.ttf") format("ttf");
-			font-weight: 300;
-			font-display: fallback;
-		}
-
-		//thin - 100
-		@font-face {
-			font-family: "IBM Plex Mono";
-			src: url("/fonts/IBMPlexMono-Light.ttf") format("ttf");
-			font-weight: 100;
-			font-display: fallback;
-		}
-
-		//medium - 500
-		@font-face {
-			font-family: "IBM Plex Mono";
-			src: url("/fonts/IBMPlexMono-Medium.ttf") format("ttf");
-			font-weight: 500;
-			font-display: fallback;
-		}
-
-		//semi-bold - 600
-		@font-face {
-			font-family: "IBM Plex Mono";
-			src: url("/fonts/IBMPlexMono-SemiBold.ttf") format("ttf");
-			font-weight: 600;
-			font-display: fallback;
-		}
-
-		//medium - 500
-		@font-face {
-			font-family: "IBM Plex Mono";
-			src: url("/fonts/IBMPlexMono-Bold.ttf") format("ttf");
-			font-weight: 700;
-			font-display: fallback;
-		}
-
-	
-
-/***** Windows Command Promt *****/
- 	@font-face {
- 		font-family: "Windows Command Promt";
- 		src: url("/fonts/windows_command_prompt.ttf") format("ttf");
- 		font-weight: 400;
- 		font-display: fallback;
- 	}
-
- 	 /*@font-face {
- 		font-family: "Press Start 2P";
- 		src: url("/fonts/PressStart2P-Regular.ttf") format("ttf");
- 		font-weight: 400;
- 		font-display: fallback;
- 	}*/
+/***** Sketch Gothic *****/
+/* https://www.dafont.com/computerfont.font */
+	@font-face {
+	    font-family: 'aniron';
+	    src: url('/anirm___.ttf') format('ttf');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	.aniron{
+		font-family: "aniron";
+		line-height:1;
+		//font-size: 45px;
+	}

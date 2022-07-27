@@ -4,7 +4,7 @@ export default function Footer({ footerMessage }) {
   return (
     <>
       <footer className={styles.footer}>
-       <p className="footer_message computerfont">{footerMessage}</p>
+       <p className={styles.footer_message +" SketchGothic"}>{footerMessage}</p>
       </footer>
     </>
   )

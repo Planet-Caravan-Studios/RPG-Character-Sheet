@@ -7,23 +7,9 @@ export default function Header({ title }) {
   	<header className={styles.header}>
   	  <Container className={styles.container}>
   	    
-  	    <div className={styles.contentLeft}>
-              <a className={styles.logo} href="/">
-                <img
-                 src="/img/hm-logo-small.png"
-                 alt="Holy Mountain Logo"
-               />
-              </a>
-  	      
-              <div className={styles.title}>
-                <h1 className="computerfont">{title}</h1>
-              </div>
-  	    </div>
-  
-  	    <div className={styles.contentRight}>
-  	      
-  	    </div>
-  	    
+  	    <a className={styles.title} href="/">
+          <h1 className="SketchGothic">RPG Character Sheet</h1>
+        </a>
   	  </Container>
   	</header>
   )

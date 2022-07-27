@@ -42,6 +42,8 @@ GENERAL
 			letter-spacing: 0.005em;
 			min-height: 100vh;
 			background-color: $background_color;
+			background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+
 			margin: 0;
 			padding: 0;
 
@@ -135,3 +137,29 @@ GENERAL
 			display: flex;
 			flex-direction: column;
 		}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    >div{
+    	border: solid 1px $black;
+    	padding: 15px;
+    }
+
+    .span-col-2{grid-column: span 2 / auto;}
+
+    .span-col-3{grid-column: span 3 / auto;}
+
+    .span-row-3{grid-row: span 3 / auto;}
+}
+
+
+
+

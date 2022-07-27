@@ -4,7 +4,9 @@
 
 .header{
 	width: 100%;
-	background-color:$nasa_grey;
+	//background-color:$nasa_grey;
+	padding: 15px 15px 15px;
+	margin-bottom: 50px;
 }
 
 
@@ -16,37 +18,15 @@
 
 }
 
-$static_width: 450px;
-
-.contentLeft{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.title{
+	@include flex_center;
+	position: relative;
+	//bottom: -5px;
 	width: 100%;
-	max-width: $static_width;
-
-	.logo{
-		@include flex_center;
-		padding: 10px;
-		margin-right: 30px;
-		border: none;
-		width: 150px;
-	}
-
-	.title{
-		@include flex_center;
-		position: relative;
-		bottom: -5px;
-		width: calc(100% - 150px);
-	}
+	font-family: "SketchGothic";
+	font-size: 65px;
+	color: $red;
 }
 
-.contentRight{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	max-width: calc(100% - #{$static_width});
-}
+
+
