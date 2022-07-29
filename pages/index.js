@@ -7,9 +7,6 @@ import Sandbox from '@components/Template/Sandbox/Sandbox'
 import ComponentMeta from '@components/Template/ComponentMeta/ComponentMeta'
 import Footer from '@components/Template/Footer/Footer'
 
-import StyleGuideMaster from '@components/StyleGuide/StyleGuideMaster/StyleGuideMaster'
-
-
 //VARS
 export async function getStaticProps() {
   
@@ -54,13 +51,13 @@ export default function Home(props) {
         <Header title="RPG Character Sheet" />
         <Container>
           <div className="grid">
-            <div className="span-col-2 SketchGothic">Character Name</div>
-            <div className="span-col-3">Race, Class, Sub-Class, Alignment</div>
+            <div className="span-col-2 SketchGothic"><span className="alt">C</span>haracter <span className="alt">N</span>ame</div>
+            <div className="span-col-3 "><span className="alt">R</span>ace, <span className="alt">C</span>lass, <span className="alt">S</span>ub-<span className="alt">C</span>lass, <span className="alt">A</span>lignment</div>
             <div>Stats pt1</div>
             <div>Stats pt2</div>
             <div>Level, HP</div>
             <div className="span-col-2">Clothing &amp; Armor</div>
-            <div className="span-col-3 span-row-3">Character Image</div>
+            <div className="span-col-3 span-row-3 "><span className="alt">C</span>haracter <span className="alt">I</span>mage</div>
             <div>Wearable Item 1</div>
             <div>Wearable Item 2</div>
             <div>Bag Item 1</div>

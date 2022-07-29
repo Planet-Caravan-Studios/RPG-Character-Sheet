@@ -153,6 +153,14 @@ GENERAL
     	padding: 15px;
     }
 
+    .SketchGothic{
+    	font-size: 55px;
+    	.alt{
+    		color: $red;
+    		font-size: 1.5em;
+    	}
+    }
+
     .span-col-2{grid-column: span 2 / auto;}
 
     .span-col-3{grid-column: span 3 / auto;}
