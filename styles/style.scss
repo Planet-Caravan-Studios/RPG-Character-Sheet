@@ -37,7 +37,7 @@ GENERAL
 			color: $primary_color;
 			font-family: $font_body, "system", monospace;
 			font-weight: 400;
-			font-size: 1.8rem;
+			font-size: $font_size_body;
 			line-height: 1.2;
 			letter-spacing: 0.005em;
 			min-height: 100vh;
@@ -156,7 +156,7 @@ GENERAL
     .SketchGothic{
     	font-size: 55px;
     	.alt{
-    		color: $red;
+    		color: $accent_color;
     		font-size: 1.5em;
     	}
     }

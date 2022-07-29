@@ -29,7 +29,7 @@ $paginationSize: 10px;
 
 		&:hover{
 			&::after {
-				color:$hm_blue;
+				//color:$hm_blue;
 			}
 		}
 	}
@@ -48,7 +48,7 @@ $paginationSize: 10px;
 
 		&:hover{
 			&::after {
-				color:$hm_blue;
+				//color:$hm_blue;
 			}
 		}
 	}
@@ -60,6 +60,6 @@ $paginationSize: 10px;
 		opacity: 1;
 		background-color: $grey_1;
 		&-active{
-			background-color: $hm_blue;
+			//background-color: $hm_blue;
 		}
 	}

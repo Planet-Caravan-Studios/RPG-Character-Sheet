@@ -1,67 +1,44 @@
-/******************************
 
-FONTS
+@font-face {
+    font-family: 'cyrodiil';
+    src: url('/fonts/cyrodiil-webfont.woff2') format('woff2'),
+         url('/fonts/cyrodiil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.cyrodiil{
+	font-family: 'cyrodiil';
+}
 
-	- Font Weights Syntax: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_mapping
-	- Font-based Computed Values: https://developer.mozilla.org/en-US/docs/Web/CSS/length#font-relative_lengths
+@font-face {
+    font-family: 'sketch-gothic';
+    src: url('/fonts/sketch_gothic_school-webfont.woff2') format('woff2'),
+         url('/fonts/sketch_gothic_school-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.sketchGothic{
+	font-family: 'sketch-gothic';
+}
 
-******************************/
+@font-face {
+    font-family: 'elvish';
+    src: url('/fonts/tngan-webfont.woff2') format('woff2'),
+         url('/fonts/tngan-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.elvish{
+	font-family: 'elvish';
+}
 
-/***** ================= *****/
-/***** SYSTEM FONT STACK  *****/
-/***** ================= *****/
-
-	@font-face {
-		font-family: system;
-		font-style: normal;
-		font-weight: 300;
-		src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-	}
-
-	html {
-		font-family: "system";
-		letter-spacing: 0.035em;
-	}
-
-/***** Computerfont *****/
-/* https://www.dafont.com/computerfont.font */
-	@font-face {
-		font-family: "Computerfont";
-		src: url("/fonts/Computerfont.ttf") format("ttf");
-		font-weight: 100;
-		font-display: fallback;
-	}
-	.computerfont{
-		font-family: "Computerfont";
-		line-height:1;
-	}
-
-
-/***** Sketch Gothic *****/
-/* https://www.dafont.com/computerfont.font */
-	@font-face {
-	    font-family: 'sketch_gothic_schoolregular';
-	    src: url('/sketchgothic.woff2') format('woff2'),
-	         url('/sketchgothic.woff') format('woff');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	.SketchGothic{
-		font-family: "sketch_gothic_schoolregular";
-		line-height:1;
-		//font-size: 45px;
-	}
-
-/***** Sketch Gothic *****/
-/* https://www.dafont.com/computerfont.font */
-	@font-face {
-	    font-family: 'aniron';
-	    src: url('/anirm___.ttf') format('ttf');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	.aniron{
-		font-family: "aniron";
-		line-height:1;
-		//font-size: 45px;
-	}
+@font-face {
+    font-family: 'theban';
+    src: url('/fonts/wiccanways-webfont.woff2') format('woff2'),
+         url('/fonts/wiccanways-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.theban{
+	font-family: 'theban';
+}

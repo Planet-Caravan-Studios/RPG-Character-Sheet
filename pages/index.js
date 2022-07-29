@@ -3,8 +3,6 @@
 import Head from 'next/head'
 import Header from '@components/Template/Header/Header'
 import Container from '@components/Template/Container/Container'
-import Sandbox from '@components/Template/Sandbox/Sandbox'
-import ComponentMeta from '@components/Template/ComponentMeta/ComponentMeta'
 import Footer from '@components/Template/Footer/Footer'
 
 //VARS
@@ -55,7 +53,7 @@ export default function Home(props) {
             <div className="span-col-3 "><span className="alt">R</span>ace, <span className="alt">C</span>lass, <span className="alt">S</span>ub-<span className="alt">C</span>lass, <span className="alt">A</span>lignment</div>
             <div>Stats pt1</div>
             <div>Stats pt2</div>
-            <div>Level, HP</div>
+            <div>Level, Health Points, Action Points</div>
             <div className="span-col-2">Clothing &amp; Armor</div>
             <div className="span-col-3 span-row-3 "><span className="alt">C</span>haracter <span className="alt">I</span>mage</div>
             <div>Wearable Item 1</div>

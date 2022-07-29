@@ -14,17 +14,6 @@ Description:	Store SCSS vars here
 	$grey_2:		#3e3e3e;
 	$red: 			#9C1700;
 
-	//Holy Mountain Colors
-		$hm_red:		#e30022;
-		$hm_orange:	#ff8b00;
-		$hm_yellow:	#fee72f;
-		$hm_green:		#03c03c;
-		$hm_blue:		#1f75fe;
-		$hm_purple:	#662b7e;
-	
-	//NASA Colors
-		$nasa_grey:	#D1D3D4;
-
 	/***** Named Colors *****/
 		//only use other vars
 		$primary_color:			$black;
@@ -36,14 +25,14 @@ Description:	Store SCSS vars here
 
 
 /***** Fonts *****/
-	$font_body:		"aniron";
-	$font_display:	"SketchGothic";
-	$font_alt:			"Windows Command Prompt";
+	$font_body:		"cyrodiil";
+	$font_display:	"sketch-gothic";
+	$font_alt:			"elvish";
 
 /***** Font Sizes *****/
 	$font_size_heading:	65px;
 	$font_size_subhead:	36px;
-	$font_size_body:		20px;
+	$font_size_body:		24px;
 	$font_size_detail:		12px;
 
 /***** Letter Spacing *****/
