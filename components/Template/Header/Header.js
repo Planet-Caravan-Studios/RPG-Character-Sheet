@@ -8,7 +8,9 @@ export default function Header({ title }) {
   	  <Container className={styles.container}>
   	    
   	    <a className={styles.title} href="/">
-          <h1 className="SketchGothic">RPG Character Sheet</h1>
+          <h1 className="sketchGothic">
+            RPG Character Sheet
+          </h1>
         </a>
   	  </Container>
   	</header>

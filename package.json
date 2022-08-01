@@ -13,7 +13,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "build-static": "next build && next export"
+    "build-static": "next build && next export",
+    "nvm-set": "nvm use 10.24"
   },
   "dependencies": {
     "fontawesome": "^5.6.3",

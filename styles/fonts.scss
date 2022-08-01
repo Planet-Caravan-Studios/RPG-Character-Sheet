@@ -1,3 +1,6 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
 
 @font-face {
     font-family: 'cyrodiil';
@@ -8,6 +11,10 @@
 }
 .cyrodiil{
 	font-family: 'cyrodiil';
+    .alt{
+            color: $accent_color;
+            font-size: 1.5em;
+        }
 }
 
 @font-face {
@@ -19,6 +26,10 @@
 }
 .sketchGothic{
 	font-family: 'sketch-gothic';
+    .alt{
+            color: $accent_color;
+            font-size: 1.5em;
+        }
 }
 
 @font-face {
@@ -30,6 +41,10 @@
 }
 .elvish{
 	font-family: 'elvish';
+    .alt{
+            color: $accent_color;
+            font-size: 1.5em;
+        }
 }
 
 @font-face {
@@ -41,4 +56,8 @@
 }
 .theban{
 	font-family: 'theban';
+    .alt{
+            color: $accent_color;
+            font-size: 1.5em;
+        }
 }

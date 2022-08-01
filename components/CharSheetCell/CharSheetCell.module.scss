@@ -1,0 +1,10 @@
+@import "@styles/vars.scss";
+@import "@styles/mixins.scss";
+
+
+.title{
+	//font-size: clamp(36px, 50px, 4vw);
+}
+.body{
+	font-size: clamp(36px, 50px, 4vw);
+}
