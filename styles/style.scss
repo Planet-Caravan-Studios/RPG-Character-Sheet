@@ -62,14 +62,18 @@ GENERAL
 
 	/***** Lists Global *****/
 		ul.listFix{	
-			padding-left: 2.5ch;
-			
+			padding-left: 2.5ch;		
+			>li{
+				margin-bottom: 0.65ex;
+			}
+		}
+
+		ul.genericList{	
+			list-style: none;			
 			>li{
 				margin-bottom: 1ex;
 			}
 		}
-
-		
 
 
 	/***** NoList *****/
@@ -174,12 +178,15 @@ GENERAL
     	font-size: 55px;
     }
 
+    .span-col-1{grid-column: span 1 / auto;}
+
     .span-col-2{grid-column: span 2 / auto;}
 
     .span-col-3{grid-column: span 3 / auto;}
 
     .span-row-3{grid-row: span 3 / auto;}
 
+    /*Character Name*/
     .charName{
     	display: flex;
     	justify-content: flex-start;
@@ -204,6 +211,46 @@ GENERAL
     		justify-content: center;;
     		align-items:center;
     		font-size: clamp(36px, 65px, 4vw);
+    	}
+    }
+
+    /*Attributes*/
+    .charAttributes{
+    	//font-size: 2vw;
+    	font-size: clamp(28px, 50px, 1vw);
+    	.attrName{
+    		display: inline-block;
+    		width: calc(100% - 250px);
+    	}
+    	.attrVal{
+    		display: inline-block;
+    		width: 250px;
+    		text-align: center;
+    		font-size: 1em;
+    	}
+    }
+
+    /*bgRed*/
+    .bgRed{
+    	background-color: $red;
+    	color: $white;
+    	font-size: 2.5em;
+    	padding: 0.1em 0.2em;
+    }
+
+    /*Stats*/
+    .stats{
+    	//font-size: 2vw;
+    	font-size: clamp(28px, 50px, 2vw);
+    	.statName{
+    		display: inline-block;
+    		width: calc(100% - 80px);
+    	}
+    	.statVal{
+    		display: inline-block;
+    		width: 80px;
+    		text-align: center;
+    		font-size: 1.8em;
     	}
     }
 }

@@ -54,6 +54,8 @@ export default function Home(props) {
         <Header title="RPG Character Sheet" />
         <Container>
           <div className="grid">
+            
+            {/* CHARACTER NAME */}
             <div className="span-col-3">
               <CharSheetCell className="CharSheetCell charName">
                 <div className="heading sketchGothic">
@@ -65,52 +67,143 @@ export default function Home(props) {
                 </div>
               </CharSheetCell>
             </div>
+
+            {/* CHARACTER ATTRIBUTES */}
             <div className="span-col-2 ">
-              <ul className="listFix">
-                <li>
-                  <span >Race: </span>
-                  <span>Human</span>
-                </li>
-                <li>
-                  <span >Class: </span>
-                  <span>Paladin</span>
-                </li>
-                <li>
-                  <span >Sub-Class: </span>
-                  <span>Vengence, Terror Knight</span>
-                </li>
-                <li>
-                  <span >Alignment: </span>
-                  <span>Lawful Nuetral</span>
-                </li>
-              </ul>
+              <CharSheetCell className="CharSheetCell charAttributes">
+                <ul className="genericList">
+                  <li>
+                    <span className="attrName ">Race: </span>
+                    <span className="attrVal">Human</span>
+                  </li>
+                  <li>
+                    <span className="attrName " >Class: </span>
+                    <span className="attrVal">Paladin</span>
+                  </li>
+                  <li>
+                    <span className="attrName " >Sub-Class: </span>
+                    <span className="attrVal">Vengence, Terror Knight</span>
+                  </li>
+                  <li>
+                    <span className="attrName ">Alignment: </span>
+                    <span className="attrVal">Lawful Nuetral</span>
+                  </li>
+                </ul>
+              </CharSheetCell>
             </div>
+
+            {/* BASE STATS 1 */}
             <div>
-              <ul className="listFix">
-                <li>STR: <span className="sketchGothic">6</span></li>
-                <li>DEX: <span className="sketchGothic">5</span></li>
-                <li>CON: <span className="sketchGothic">4</span></li>
-              </ul>
+              <CharSheetCell className="CharSheetCell stats">
+                <ul className="genericList">
+                  <li>
+                    <span className="statName ">STR: </span>
+                    <span className="statVal sketchGothic bgRed">6</span>
+                  </li>
+                  <li>
+                    <span className="statName ">DEX: </span>
+                    <span className="statVal sketchGothic bgRed">5</span>
+                  </li>
+                  <li>
+                    <span className="statName ">CON: </span>
+                    <span className="statVal sketchGothic bgRed">5</span>
+                  </li>
+                </ul>
+              </CharSheetCell>
             </div>
+
+            {/* BASE STATS 2 */}
             <div>
-              <ul className="listFix">
-                <li>INT: <span className="sketchGothic">5</span></li>
-                <li>WIS: <span className="sketchGothic">4</span></li>
-                <li>CHR: <span className="sketchGothic">3</span></li>
-              </ul>
+              <CharSheetCell className="CharSheetCell stats">
+                <ul className="genericList">
+                  <li>
+                    <span className="statName ">INT: </span>
+                    <span className="statVal sketchGothic bgRed">5</span>
+                  </li>
+                  <li>
+                    <span className="statName ">WIS: </span>
+                    <span className="statVal sketchGothic bgRed">7</span>
+                  </li>
+                  <li>
+                    <span className="statName ">CHR: </span>
+                    <span className="statVal sketchGothic bgRed">4</span>
+                  </li>
+                </ul>
+              </CharSheetCell>
             </div>
-            <div>Level, Health Points, Action Points</div>
+
+            {/* BASE STATS 3 */}
+            <div className="span-col-1">
+              <CharSheetCell className="CharSheetCell stats">
+                <ul className="genericList">
+                  <li>
+                    <span className="statName ">LVL: </span>
+                    <span className="statVal sketchGothic bgRed">8</span>
+                  </li>
+                  <li>
+                    <span className="statName ">HP: </span>
+                    <span className="statVal sketchGothic bgRed">12</span>
+                  </li>
+                  <li>
+                    <span className="statName ">AP: </span>
+                    <span className="statVal sketchGothic bgRed">9</span>
+                  </li>
+                </ul>
+              </CharSheetCell>
+            </div>
+
+            {/* CLOTHING/ARMOR */}
             <div className="span-col-2">Clothing &amp; Armor</div>
-            <div className="span-col-3 span-row-3 "><span className="alt">C</span>haracter <span className="alt">I</span>mage</div>
-            <div>Wearable Item 1</div>
-            <div>Wearable Item 2</div>
-            <div>Bag Item 1: Health Potion</div>
-            <div>Bag Item 2: Stamina Potion</div>
-            <div>Bag Item 3: Torch</div>
-            <div>Bag Item 4: Pipe weed</div>
-            <div>Weapon</div>
-            <div className="span-col-2">Attacks</div>
-            <div className="span-col-2">Abilities</div>
+
+            {/* CHARACTER IMAGE */}
+            <div className="span-col-3 span-row-3 ">
+              <span className="alt">C</span>haracter <span className="alt">I</span>mage
+            </div>
+            
+            {/* WEARABLE ITEM 1 */}
+            <div className="span-col-1">
+              Wearable Item 1
+            </div>
+
+            {/* WEARABLE ITEM 2 */}
+            <div className="span-col-1">
+              Wearable Item 2
+            </div>
+
+            {/* BAG ITEM 1 */}
+            <div className="span-col-1">
+              Bag Item 1: Health Potion
+            </div>
+            
+            {/* BAG ITEM 2 */}
+            <div className="span-col-1">
+              Bag Item 2: Stamina Potion
+            </div>
+            
+            {/* BAG ITEM 3 */}
+            <div className="span-col-1">
+              Bag Item 3: Torch
+            </div>
+            
+            {/* BAG ITEM 4 */}
+            <div className="span-col-1">
+              Bag Item 4: Pipe weed
+            </div>
+
+            {/* WEAPON */}
+            <div className="span-col-1">
+              Weapon
+            </div>
+
+            {/* ATTACKS */}
+            <div className="span-col-2">
+              Attacks
+            </div>
+
+            {/* ABILITIES */}
+            <div className="span-col-2">
+              Abilities
+            </div>
           </div>
         </Container>
         
