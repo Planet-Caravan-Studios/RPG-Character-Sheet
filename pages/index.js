@@ -69,7 +69,7 @@ export default function Home(props) {
             </div>
 
             {/* CHARACTER ATTRIBUTES */}
-            <div className="span-col-2 ">
+            <div className="span-col-1 ">
               <CharSheetCell className="CharSheetCell charAttributes">
                 <ul className="genericList">
                   <li>
@@ -77,16 +77,24 @@ export default function Home(props) {
                     <span className="attrVal">Human</span>
                   </li>
                   <li>
+                    <span className="attrName ">Alignment: </span>
+                    <span className="attrVal">Lawful Nuetral</span>
+                  </li>
+                </ul>
+              </CharSheetCell>
+            </div>
+
+            {/* CHARACTER ATTRIBUTES */}
+            <div className="span-col-1 ">
+              <CharSheetCell className="CharSheetCell charAttributes">
+                <ul className="genericList">
+                  <li>
                     <span className="attrName " >Class: </span>
                     <span className="attrVal">Paladin</span>
                   </li>
                   <li>
                     <span className="attrName " >Sub-Class: </span>
                     <span className="attrVal">Vengence, Terror Knight</span>
-                  </li>
-                  <li>
-                    <span className="attrName ">Alignment: </span>
-                    <span className="attrVal">Lawful Nuetral</span>
                   </li>
                 </ul>
               </CharSheetCell>
@@ -157,12 +165,32 @@ export default function Home(props) {
 
             {/* CHARACTER IMAGE */}
             <div className="span-col-3 span-row-3 ">
-              <span className="alt">C</span>haracter <span className="alt">I</span>mage
+              <CharSheetCell className="CharSheetCell charImage">
+                <div className="heading sketchGothic">
+                  <span><span className='alt'>C</span>haracter </span>
+                  <span><span className='alt'>I</span>mage:</span>
+                </div>
+
+                <div className="imgFrame">
+                  {/*<div className="imgFilter"></div>*/}
+                  <img src="/img/characters/test-6.jpg" alt=""/>
+                </div>
+
+              </CharSheetCell>
             </div>
             
             {/* WEARABLE ITEM 1 */}
             <div className="span-col-1">
-              Wearable Item 1
+              <CharSheetCell className="CharSheetCell charItem">
+                <div className="heading">Wearable Item 1</div>
+                <div className="body">
+                  <p>Pendant of Thor</p>
+                  <p>+1 STR, +1 CON</p>
+                </div>
+                <div className="imgFrame">
+                  <img src="/img/items/mjollnir.png" alt=""/>
+                </div>
+              </CharSheetCell>
             </div>
 
             {/* WEARABLE ITEM 2 */}
@@ -191,8 +219,8 @@ export default function Home(props) {
             </div>
 
             {/* WEAPON */}
-            <div className="span-col-1">
-              Weapon
+            <div className="span-col-2">
+              Weapons
             </div>
 
             {/* ATTACKS */}
@@ -201,7 +229,7 @@ export default function Home(props) {
             </div>
 
             {/* ABILITIES */}
-            <div className="span-col-2">
+            <div className="span-col-1">
               Abilities
             </div>
           </div>
